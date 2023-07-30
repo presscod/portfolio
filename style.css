@@ -283,7 +283,8 @@ section .home{
     position: relative;
     width: 100%;
     background-color: var(--bg-color2);
-    border-radius: 4%;
+    border-radius: 10px;
+    border: 1px solid var(--light-color);
     transition: transform 0.4s;
     
 }
@@ -293,7 +294,7 @@ section .home{
 }
 .works .container .work img{
     width: 100%;
-    border-radius: 4% 4% 0 0;
+    border-radius: 10px 10px 0 0;
 }
 .content-work{
     padding: 40px 40px;
@@ -301,15 +302,6 @@ section .home{
 .works .container .work h5{
     margin-bottom: 2rem;
 }
-
-
-
-
-
-
-
-
-
 /*end portfolio*/
 /*start stats*/
 .stats{
@@ -390,10 +382,74 @@ section .home{
 }
 
 /*end skills*/
+
+/*start contact*/
+.contact{
+    padding: 2rem var(--padding);
+    background-color: var(--bg-color2); 
+}
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4rem 0;
+}
+.contact .contact-content .info{
+    display: block;  
+}
+.contact .contact-content .info h5{
+    margin-top: 0;
+    margin-bottom: 80px;
+}
+.contact .contact-content .info .ad{
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+.contact .contact-content .info .p1{
+    margin-top: 60px;
+
+    
+}
+
+.contact .contact-content .form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 50%;
+     
+}
+.contact .contact-content .form form{
+
+}
+.contact .form .input {
+    display: block;
+    width: 160%;
+    margin-bottom: 25px;
+    padding: 20px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: #f9f9f9;
+    caret-color: var(--primary-color);
+    border-radius:10px ;
+  }
+  .contact .form textarea.input {
+    resize: none;
+    height: 200px;
+  }
+  .contact .form .input:focus {
+    outline: none;
+  }
+
+
+
+
+
+/*end contact*/
 /*start footer*/
 footer{
     padding: 2rem var(--padding);
-    background-color: var(--bg-color2);
+    background-color: var(--bg-color1);
     border-top: 1px solid var(--light-color);
 }
 footer .content-footer{
@@ -482,7 +538,7 @@ footer .content-footer .end{
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 50%);
     background-color: var(--bg-color2);
   }
   nav ul.is-active{
