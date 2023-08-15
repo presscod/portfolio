@@ -1,6 +1,6 @@
 :root{
-    --primary-color:#ff274b;
-    --secondary-color:#f7bcf7;
+    --primary-color:#FF9F29;
+    --secondary-color:#FDD36A;
     --light-color:#ffffff;
     --bg-color1:#171a1c;
     --bg-color2:#22282a;
@@ -11,9 +11,10 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    
 }
 html{
-    scroll-behavior: smooth;
+    
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
     color: var(--light-color);
@@ -60,6 +61,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 header h2{
     font-size: 2.2rem;
@@ -440,7 +442,7 @@ footer h2{
 }
 footer .box .text{
     width: 100%;
-    margin-top: 0;
+    margin-top: 20px;
 }
 footer .container-footer{
     display: grid;
@@ -480,7 +482,7 @@ footer .box .links li a::before {
     display: flex;
     align-items: center;
     color: var(--light-color);
-    margin-bottom: 8px;
+    margin-bottom: 40px;
   }
   footer .box .line i{
     font-size: 25px;
@@ -515,24 +517,18 @@ footer .last{
     border-top: 1px solid var(--light-color);
 }
 
-/*
-.contact .contact-content .info{
-    display: block;  
-}
-.contact .contact-content .info h5{
-    margin-top: 0;
-    margin-bottom: 80px;
-}
-.contact .contact-content .info .ad{
-    margin-top: 20px;
-    margin-bottom: 60px;
-}
-.contact .contact-content .info .p1{
-    margin-top: 60px;
+.scroll-up{
 
+    font-size: 4rem;
+    color: var(--primary-color);
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    display: none;
+    behavior: smooth;
     
 }
-*/
+
 /*end footer*/
 
 /*end humberger Menu*/
